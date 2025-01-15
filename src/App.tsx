@@ -11,13 +11,13 @@ import { dataProvider } from "./dataProvider";
 export const App = () => (
   <Admin layout={Layout} dataProvider={dataProvider}>
     <Resource
-      name="posts"
+      name="books"
       list={ListGuesser}
       edit={EditGuesser}
       show={ShowGuesser}
     />
     <Resource
-      name="comments"
+      name="authors"
       list={ListGuesser}
       edit={EditGuesser}
       show={ShowGuesser}

@@ -1,121 +1,151 @@
 {
-  "posts": [
-    {
-      "id": 0,
-      "title": "Post 1",
-      "content": "Content 1"
-    },
+  "books": [
     {
       "id": 1,
-      "title": "Post 2",
-      "content": "Content 2"
+      "title": "War and Peace",
+      "author_id": 1,
+      "year": 1869
     },
     {
       "id": 2,
-      "title": "Post 3",
-      "content": "Content 3"
+      "title": "Anna Karenina",
+      "author_id": 1,
+      "year": 1877
     },
     {
       "id": 3,
-      "title": "Post 4",
-      "content": "Content 4"
+      "title": "Pride and Predjudice",
+      "author_id": 2,
+      "year": 1813
     },
     {
       "id": 4,
-      "title": "Post 5",
-      "content": "Content 5"
+      "author_id": 2,
+      "title": "Sense and Sensibility",
+      "year": 1811
     },
     {
       "id": 5,
-      "title": "Post 6",
-      "content": "Content 6"
+      "title": "The Picture of Dorian Gray",
+      "author_id": 3,
+      "year": 1890
     },
     {
       "id": 6,
-      "title": "Post 7",
-      "content": "Content 7"
+      "title": "Le Petit Prince",
+      "author_id": 4,
+      "year": 1943
     },
     {
       "id": 7,
-      "title": "Post 8",
-      "content": "Content 8"
+      "title": "Alice's Adventures in Wonderland",
+      "author_id": 5,
+      "year": 1865
     },
     {
       "id": 8,
-      "title": "Post 9",
-      "content": "Content 9"
+      "title": "Madame Bovary",
+      "author_id": 6,
+      "year": 1856
     },
-    {
-      "id": 9,
-      "title": "Post 10",
-      "content": "Content 10"
-    },
+    { "id": 9, "title": "The Hobbit", "author_id": 7, "year": 1937 },
     {
       "id": 10,
-      "title": "Post 11",
-      "content": "Content 11"
+      "title": "The Lord of the Rings",
+      "author_id": 7,
+      "year": 1954
     },
     {
       "id": 11,
-      "title": "Post 12",
-      "content": "Content 12"
-    }
-  ],
-  "comments": [
-    {
-      "id": 0,
-      "postId": 0,
-      "content": "Comment 1"
+      "title": "Harry Potter and the Philosopher's Stone",
+      "author_id": 8,
+      "year": 1997
     },
     {
+      "id": 12,
+      "title": "The Alchemist",
+      "author_id": 9,
+      "year": 1988
+    },
+    {
+      "id": 13,
+      "title": "A Catcher in the Rye",
+      "author_id": 10,
+      "year": 1951
+    },
+    {
+      "id": 14,
+      "title": "Ulysses",
+      "author_id": 11,
+      "year": 1922
+    }
+  ],
+  "authors": [
+    {
       "id": 1,
-      "postId": 0,
-      "content": "Comment 2"
+      "first_name": "Leo",
+      "last_name": "Tolstoy",
+      "date_of_birth": "1828-09-09"
     },
     {
       "id": 2,
-      "postId": 1,
-      "content": "Comment 3"
+      "first_name": "Jane",
+      "last_name": "Austen",
+      "date_of_birth": "1775-12-16"
     },
     {
       "id": 3,
-      "postId": 1,
-      "content": "Comment 4"
+      "first_name": "Oscar",
+      "last_name": "Wilde",
+      "date_of_birth": "1854-10-16"
     },
     {
       "id": 4,
-      "postId": 2,
-      "content": "Comment 5"
+      "first_name": "Antoine",
+      "last_name": "de Saint-Exupéry",
+      "date_of_birth": "1900-06-29"
     },
     {
       "id": 5,
-      "postId": 2,
-      "content": "Comment 6"
+      "first_name": "Lewis",
+      "last_name": "Carroll",
+      "date_of_birth": "1832-01-27"
     },
     {
       "id": 6,
-      "postId": 3,
-      "content": "Comment 7"
+      "first_name": "Gustave",
+      "last_name": "Flaubert",
+      "date_of_birth": "1821-12-12"
     },
     {
       "id": 7,
-      "postId": 3,
-      "content": "Comment 8"
+      "first_name": "J. R. R.",
+      "last_name": "Tolkien",
+      "date_of_birth": "1892-01-03"
     },
     {
       "id": 8,
-      "postId": 3,
-      "content": "Comment 9"
+      "first_name": "J. K.",
+      "last_name": "Rowling",
+      "date_of_birth": "1965-07-31"
     },
     {
       "id": 9,
-      "postId": 4,
-      "content": "Comment 10"
+      "first_name": "Paulo",
+      "last_name": "Coelho",
+      "date_of_birth": "1947-08-24"
     },
     {
       "id": 10,
-      "postId": 4,
-      "content": "Comment 11"
+      "first_name": "J. D.",
+      "last_name": "Salinger",
+      "date_of_birth": "1919-01-01"
+    },
+    {
+      "id": 11,
+      "first_name": "James",
+      "last_name": "Joyce",
+      "date_of_birth": "1882-02-02"
     }
   ]
 }
