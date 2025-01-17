@@ -1,18 +1,18 @@
 import {
-  Datagrid,
-  List,
   NumberField,
-  TextField,
   ReferenceField,
+  Show,
+  SimpleShowLayout,
+  TextField,
 } from "react-admin";
 
-export const BookList = () => (
-  <List>
-    <Datagrid>
+export const BookShow = () => (
+  <Show>
+    <SimpleShowLayout>
       <TextField source="id" />
       <TextField source="title" />
       <ReferenceField source="author_id" reference="authors" />
       <NumberField source="year" />
-    </Datagrid>
-  </List>
+    </SimpleShowLayout>
+  </Show>
 );
