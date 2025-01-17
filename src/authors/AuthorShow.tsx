@@ -34,7 +34,7 @@ export const AuthorShow = () => {
         <TextField source="first_name" />
         <TextField source="last_name" />
         <DateField source="date_of_birth" />
-        <Labeled label="Books by this author">
+        <Labeled label="Books by this author" fullWidth>
           <ResourceContextProvider value="books">
             <ListContextProvider value={booksListContext}>
               <Datagrid bulkActionButtons={false} rowClick="show">
