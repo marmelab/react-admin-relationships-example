@@ -1,15 +1,12 @@
-import {
-  ListGuesser,
-  EditGuesser,
-  ShowGuesser,
-  ResourceProps,
-} from "react-admin";
+import { EditGuesser, ResourceProps } from "react-admin";
+import { AuthorList } from "./AuthorList";
+import { AuthorShow } from "./AuthorShow";
 
 const authors: ResourceProps = {
   name: "authors",
-  list: ListGuesser,
+  list: AuthorList,
   edit: EditGuesser,
-  show: ShowGuesser,
+  show: AuthorShow,
   recordRepresentation: (author) => `${author.first_name} ${author.last_name}`,
 };
 
