@@ -4,7 +4,10 @@ import {
   Show,
   SimpleShowLayout,
   TextField,
+  SingleFieldList,
+  ChipField,
 } from "react-admin";
+import { ReferenceManyToManyField } from "@react-admin/ra-relationships";
 
 export const BookShow = () => (
   <Show>
@@ -13,6 +16,16 @@ export const BookShow = () => (
       <TextField source="title" />
       <ReferenceField source="author_id" reference="authors" />
       <NumberField source="year" />
+      <ReferenceManyToManyField
+        reference="collections"
+        through="books_collections"
+        using="book_id,collection_id"
+        label="Collections"
+      >
+        <SingleFieldList>
+          <ChipField source="name" />
+        </SingleFieldList>
+      </ReferenceManyToManyField>
     </SimpleShowLayout>
   </Show>
 );
