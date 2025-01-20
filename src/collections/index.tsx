@@ -1,8 +1,11 @@
-import { ResourceProps, ListGuesser } from "react-admin";
+import { ResourceProps } from "react-admin";
+import { CollectionList } from "./CollectionList";
+import { CollectionShow } from "./CollectionShow";
 
 const collections: ResourceProps = {
   name: "collections",
-  list: ListGuesser,
+  list: CollectionList,
+  show: CollectionShow,
 };
 
 export default collections;
