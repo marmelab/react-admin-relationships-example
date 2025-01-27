@@ -19,7 +19,7 @@ export const CollectionList = () => (
         using="collection_id,book_id"
         label="Books"
       >
-        <SingleFieldList>
+        <SingleFieldList linkType="show">
           <ChipField source="title" />
         </SingleFieldList>
       </ReferenceManyToManyField>
