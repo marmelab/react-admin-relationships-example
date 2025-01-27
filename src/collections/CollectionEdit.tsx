@@ -5,7 +5,7 @@ import {
 } from "@react-admin/ra-relationships";
 
 export const CollectionEdit = () => (
-  <Edit>
+  <Edit mutationMode="pessimistic">
     <SimpleForm>
       <TextInput source="id" />
       <TextInput source="name" />

@@ -9,7 +9,7 @@ import {
 import { ReferenceManyToManyInput } from "@react-admin/ra-relationships";
 
 export const BookEdit = () => (
-  <Edit>
+  <Edit mutationMode="pessimistic">
     <SimpleForm>
       <TextInput source="id" />
       <TextInput source="title" />
