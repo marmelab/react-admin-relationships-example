@@ -1,4 +1,10 @@
-import { Datagrid, DateField, List, TextField } from "react-admin";
+import {
+  Datagrid,
+  DateField,
+  List,
+  ReferenceManyCount,
+  TextField,
+} from "react-admin";
 
 export const AuthorList = () => (
   <List>
@@ -7,6 +13,7 @@ export const AuthorList = () => (
       <TextField source="first_name" />
       <TextField source="last_name" />
       <DateField source="date_of_birth" />
+      <ReferenceManyCount reference="books" target="author_id" label="Books" />
     </Datagrid>
   </List>
 );
