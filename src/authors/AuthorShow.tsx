@@ -24,7 +24,7 @@ export const AuthorShow = () => {
           target="author_id"
           pagination={<Pagination rowsPerPageOptions={[1, 5, 10, 25]} />}
         >
-          <Datagrid bulkActionButtons={false} rowClick="show">
+          <Datagrid bulkActionButtons={false}>
             <TextField source="id" />
             <TextField source="title" />
             <ReferenceField
